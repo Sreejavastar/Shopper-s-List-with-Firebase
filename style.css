@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Padauk', sans-serif;
+    background-color: rgb(247, 221, 212);
+    user-select: none;
+}
+
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: rgb(137, 82, 82);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+    
+}
+img{
+    width: 150px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+input{
+    color:  #4320007d;
+    background-color: #dbdcde;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Padauk', sans-serif; 
+    margin: 10px 0;
+}
+#add-button{
+    appearance: none;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color:  #432000;
+    background-color: #df7f6a5d;
+    border: 0;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Padauk', sans-serif; 
+    cursor: pointer;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+#add-button:disabled {
+  pointer-events: none;
+}
+
+
+#add-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  background-color: #a648489c;
+  letter-spacing: 2px;
+  transform: translateY(-2px);
+}
+
+
+#add-button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+ul li {
+  font-size: 20px;
+  background-color: #FFFDF8;
+  padding: 15px;
+  border-radius: 16px;
+  flex-grow: 1;
+  text-align: center;
+  box-shadow: 0px 2px 4.5px rgba(0, 0, 0, 0.2);
+  border: none;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+ul li:hover {
+  animation: pulse 1s infinite;
+  transition: .3s;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(.9);
+  }
+    100% {
+    transform: scale(1);
+  }
+}
+
+
+ul li{
+  background-image: linear-gradient(to right, #e2c9be8c, #e5c2b29a, #e7c5bfe5, #f4ccc1);
+  box-shadow: 0 1px 8px 0 rgba(201, 142, 112, 0.75);
+}
